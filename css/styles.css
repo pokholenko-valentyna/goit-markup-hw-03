@@ -56,6 +56,18 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 /*header*/
 .header {
     border-bottom: 1px solid #ECECEC;
@@ -130,12 +142,15 @@ img {
 }
 /*hero*/
 .hero {
+    padding: 200px 0;
     background-color: var(--bg-dark);
 }
 .hero .container {
    text-align: center; 
 }
 .hero-title {
+    width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -248,7 +263,7 @@ img {
     font-weight: 400;
 }
 .item-address {
-    width: 231px;
+
 }
 .item-tel,
 .item-mail {
@@ -266,11 +281,11 @@ img {
     color: var(--accent-color);
 }
 /*portfolio*/
+
 .filters {
     display: flex;
     justify-content: center;
-    padding-bottom: 16px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .filters-btn {
     display: inline-block;
@@ -290,7 +305,6 @@ img {
     }
 .filters-btn:hover,
 .filters-btn:focus {
-    padding: 6px 25px;
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
